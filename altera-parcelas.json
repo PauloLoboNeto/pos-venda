@@ -1,0 +1,56 @@
+// "Headers": itau-pos-venda-teste: UUID
+// Request: 
+{
+    "contrato": {
+        "id_contrato": 37959,
+        "numero_cpf_cnpj_cliente": "11111111111111",
+        "data_contratacao": "2023-03-10",
+        "ativo": true,
+        "parcelas_em_atraso": false
+    },
+    "financeiro": [
+        {
+            "data_calculo": "2023-03-10",
+            "tipo_calculo": "CONTRATACAO",
+            "valor_total": 50000.00,
+            "quantidade parcelas": 50,
+            "valor parcelas": 1000.00,
+            "dia_pagamento": 23,
+            "percentual_taxa_juro": 1.99
+        }
+    ],
+    "aditamento": {
+        "nova_quantidade_parcelas": 56
+    }
+}
+// Response: 
+// "Headers": itau-pos-venda-teste: UUID
+{
+    "contrato": {
+        "id_contrato": 3795,
+        "ultimo_digito_contrato": 9,
+        "numero_cpf_cnpj_cliente": "66273815089",
+        "data_contratacao": "2023-03-10",
+        "ativo": true,
+        "parcelas em atraso": false
+    },
+    "financeiro": [
+        {
+            "data_calculo": "2023-03-10",
+            "tipo_calculo": "CONTRATACAO",
+            "valor_total": 50000.00,
+            "quantidade_parcelas": 50,
+            "valor_parcelas": 1000.00,
+            "dia_pagamento": 23,
+            "percentual_taxa_juro": 1.99
+        },
+        {
+            "data_calculo": "2023-04-06",
+            "tipo_calculo": "ADITAMENTO",
+            "valor_total": 52000.00,
+            "quantidade_parcelas": 54,
+            "valor_parcelas": 963.50,
+            "dia_pagamento": 4,
+            "percentual_taxa_juro": 1.99
+        }
+    ]

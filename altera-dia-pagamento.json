@@ -1,0 +1,47 @@
+// Headers: itau-pos-venda-teste: UUID
+{
+    "contrato": {
+        "id_contrato": 37959,
+        "numero_cpf_cnpj_cliente": "66273815089",
+        "data_contratacao": "2023-03-10",
+        "ativo": true,
+        "parcelas_em_atraso": false
+    },
+    "financeiro": [
+        {
+            "data_calculo": "2023-03-10",
+            "tipo_calculo": "CONTRATACAO",
+            "valor_total": 50000.00,
+            "quantidade_parcelas": 50,
+            "valor_parcelas": 1000.00,
+            "dia_pagamento": 23,
+            "percentual_taxa_juro": 1.99
+        }
+    ],
+    "aditamento": {
+        "nova_data_pagamento": 15
+    }
+}
+// Response:
+// itau-pos-venda-teste: UUID
+{
+    "contrato": {
+        "id_contrato": 3795,
+        "ultimo_digito_contrato": 9,
+        "numero_cpf_cnpj_cliente": "66273815089",
+        "data_contratacao": "2023-03-10",
+        "ativo": true,
+        "parcelas_em_atraso": false
+    },
+    "financeiro": [
+        {
+            "data_calculo": "2023-03-10",
+            "tipo_calculo": "CONTRATACAO",
+            "valor_total": 50000.00,
+            "quantidade_parcelas": 50,
+            "valor_parcelas": 1000.00,
+            "dia_pagamento": 23,
+            "percentual_taxa_juro": 1.99
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+// Header: itau-pos-venda-teste: UUID
+{
+  "contrato": {
+    "definir_data_contratacao": "2021-07-30",
+    "definir_criterio_calculo": "JUROS_SIMPLES",
+    "definir_quantidade_parcelas": 54,
+    "definir_valor_contratacao": 50000.00
+  }
+}
+
+
+//Response
+{
+  "data": {
+    "percentual_juros": 1.93,
+    "valor_total": 52000.00
+  }
+}
